@@ -1,1 +1,18 @@
+Project Name: Customer Insights Dashboard
 
+Objective:
+Develop a Power BI dashboard to provide visibility of customer satisfaction, service demand and operational performance.
+
+Key Stakeholders:
+- Head of Operations
+- Data Team
+- Product Team
+
+Current Status:
+Requirements gathering completed.
+Dashboard prototype in development.
+
+Success Criteria:
+- Improved reporting visibility
+- Reduction in manual reporting effort
+- Increased stakeholder engagement
