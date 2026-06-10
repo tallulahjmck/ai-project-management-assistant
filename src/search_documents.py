@@ -38,6 +38,12 @@ search_term = input("What would you like to search for? ")
 
 results = search_documents(search_term)
 
+# Search statistics
+total_documents = len(list(SAMPLE_DOCS.glob("*.txt")))
+
+print(f"\nDocuments searched: {total_documents}")
+print(f"Matching chunks found: {len(results)}")
+
 # Sort by relevance (highest match count first)
 results.sort(key=lambda result: result[2], reverse=True)
 
