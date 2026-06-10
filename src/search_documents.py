@@ -1,13 +1,17 @@
+from pathlib import Path
 from document_loader import load_document
+
+SAMPLE_DOCS = Path("sample_docs")
 
 def chunk_document(document):
     return document.split("\n\n")
 
 def search_documents(keyword):
-    documents = {
-        "project_brief.txt": load_document("project_brief.txt"),
-        "risk_register.txt": load_document("risk_register.txt")
-    }
+
+    documents = {}
+
+    for file in SAMPLE_DOCS.glob("*.txt"):
+        documents[file.name] = load_document(file.name)
 
     results = []
 

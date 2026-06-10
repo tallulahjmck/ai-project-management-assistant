@@ -7,9 +7,3 @@ def load_document(filename):
 
     with open(file_path, "r", encoding="utf-8") as file:
         return file.read()
-
-project_brief = load_document("project_brief.txt")
-risk_register = load_document("risk_register.txt")
-
-print(project_brief)
-print(risk_register)
