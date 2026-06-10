@@ -1,12 +1,15 @@
 from pathlib import Path
 
-file_path = Path("sample_docs/project_brief.txt")
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-with open(file_path, "r", encoding="utf-8") as file:
-    content = file.read()
+def load_document(filename):
+    file_path = BASE_DIR / "sample_docs" / filename
 
-chunks = content.split("\n\n")
+    with open(file_path, "r", encoding="utf-8") as file:
+        return file.read()
 
-for i, chunk in enumerate(chunks):
-    print(f"\n--- Chunk {i+1} ---")
-    print(chunk)
+project_brief = load_document("project_brief.txt")
+risk_register = load_document("risk_register.txt")
+
+print(project_brief)
+print(risk_register)
