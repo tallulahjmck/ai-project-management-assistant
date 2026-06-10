@@ -1,1 +1,10 @@
+Stakeholder: Head of Operations
 
+Interest:
+High
+
+Influence:
+High
+
+Concerns:
+Delivery timescales and reporting quality.

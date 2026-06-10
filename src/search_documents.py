@@ -21,7 +21,7 @@ def search_documents(keyword):
     return results
 
 
-search_term = "risk"
+search_term = input("What would you like to search for? ")
 
 results = search_documents(search_term)
 
