@@ -1,1 +1,27 @@
+Risk ID: R001
 
+Risk:
+Data quality issues may impact reporting accuracy.
+
+Likelihood:
+Medium
+
+Impact:
+High
+
+Mitigation:
+Implement validation checks and data profiling.
+
+Risk ID: R002
+
+Risk:
+Stakeholder requirements may change during development.
+
+Likelihood:
+High
+
+Impact:
+Medium
+
+Mitigation:
+Hold fortnightly stakeholder review sessions.
